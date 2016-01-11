@@ -101,7 +101,7 @@ class multifieldsFormBase {
 
 ### Step 4
 From this point we have to do customisations in the custom directory. Place below code at the custom field we have created in the first step in the below mentioned file
-Filepath : '<custom/modules/<module name>/metadata/editviewdefs.php>'
+Filepath : 'custom/modules/<module name>/metadata/editviewdefs.php'
 
 ### Step 5
 Now past the below javascript function showfield code in the same file outside the php tags.
