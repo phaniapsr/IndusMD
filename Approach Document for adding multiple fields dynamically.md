@@ -90,7 +90,7 @@ class multifieldsFormBase {
 		if(isset($_POST['return_id']) && $_POST['return_id'] != "") {
 			$return_id = $_POST['return_id'];
 		}
-			hocation: index.php?action=$return_action&module=$return_module&record=$return_id");
+			location: index.php?action=$return_action&module=$return_module&record=$return_id");
 		}
 }
 ?>
