@@ -71,8 +71,8 @@ class multifieldsFormBase {
 	    else {
 		$return_module = " multifields";
 	    }
-		if(isset($_POST['return_action']) && $_POST['return_action'] != "") {
-			if($_REQUEST['return_module'] == 'Emails') {
+	    if(isset($_POST['return_action']) && $_POST['return_action'] != "") {
+	    	if($_REQUEST['return_module'] == 'Emails') {
 	   		    $return_action = $_REQUEST['return_action'];
 			}
 	   		// if we create a new record "Save", we want to redirect to the DetailView
@@ -91,7 +91,7 @@ class multifieldsFormBase {
 			$return_id = $_POST['return_id'];
 		}
 			location: index.php?action=$return_action&module=$return_module&record=$return_id");
-		}
+	    }
 }
 ?>
 
