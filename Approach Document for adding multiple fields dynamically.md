@@ -99,3 +99,45 @@ class multifieldsFormBase {
 *Note: 
        1. handleSave function code varies according to the fields we have in the module
        2. In the above code multifields need to replace with the module name*
+
+### Step 4
+From this point we have to do customisations in the custom directory. Place below code at the custom field we have created in the first step in the below mentioned file
+Filepath : '<custom/modules/<module name>/metadata/editviewdefs.php>'
+
+### Step 5
+Now past the below javascript function showfield code in the same file outside the php tags.
+
+```
+<script type="application/javascript">
+// This function adds the text field with remove button dyanmically
+function showfield()
+	{
+    	var btn=document.getElementById('addbutton');
+    	var x=document.getElementById('productLine1').insertRow(-1);
+    	var dd=x.insertCell(0);
+    	dd.innerHTML='<input type=\'text\' id=\'multi\' name=\'multi[]\'><input type=\'button\' value=\'-\' onclick=\'cancel(this)\'>';
+	}
+
+// This function removes the text field dynamically
+
+function cancel(ln){
+	var obj = ln.parentNode.parentNode.rowIndex;
+	document.getElementById('productLine1').deleteRow(obj);
+	var btn=document.getElementById('addbutton');
+	btn.disabled='';
+}
+
+// This function will be called on body onload event of edit view page
+function addmulti(vardata){
+    	fields=vardata.split(','); // Here we are splitting data seperated with comma as delimeter.
+   		 for(var i=0;i<fields.length;i++) // This will appends text fields 
+   		 {
+   			 var xy=document.getElementById('productLine1').insertRow(-1);
+   			 var inval=xy.insertCell(0);
+   			 inval.innerHTML='<input type=\'text\' id=\'multi[]\' name=\'multi[]\'     value=\''+fields[i] +'\'><input type=\'button\' value=\'-\' onclick=\'cancel(this)\'>';   	 
+   		 }
+}    
+</script>
+
+```
+*Note: After completion of these customizations make sure to delete file editview.tpl in catche/modules/<module name>*
