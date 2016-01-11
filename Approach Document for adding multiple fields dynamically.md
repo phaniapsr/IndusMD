@@ -96,5 +96,6 @@ class multifieldsFormBase {
 ?>
 
 ```
-*Note: > handleSave function code varies according to the fields we have in the module. 
+*Note: 
+       > handleSave function code varies according to the fields we have in the module. 
        > In the above code multifields need to replace with the module name*
