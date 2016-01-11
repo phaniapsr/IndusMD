@@ -19,7 +19,7 @@ Create a file Save.php in modules/module_name/ directory. Place the code in the 
 Here we are calling handleSave function to customize the saving functionality.
 
 ### Step 3
-Now we have to create a file named <module name>FormBase.php and place the below code.
+Now we have to create a file named module_nameFormBase.php and place the below code.
 ```
 <?php
 class multifieldsFormBase {
