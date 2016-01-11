@@ -65,23 +65,23 @@ class multifieldsFormBase {
 	}
 
 	function handleRedirect($return_id){
-		if(isset($_POST['return_module']) && $_POST['return_module'] != "") {
-			$return_module = $_POST['return_module'];
+	    if(isset($_POST['return_module']) && $_POST['return_module'] != "") {
+		$return_module = $_POST['return_module'];
 	    }
-		else {
-			$return_module = " multifields";
+	    else {
+		$return_module = " multifields";
 	    }
 		if(isset($_POST['return_action']) && $_POST['return_action'] != "") {
 			if($_REQUEST['return_module'] == 'Emails') {
-	   			$return_action = $_REQUEST['return_action'];
+	   		    $return_action = $_REQUEST['return_action'];
 			}
 	   		// if we create a new record "Save", we want to redirect to the DetailView
 			elseif($_REQUEST['action'] == "Save" && $_REQUEST['return_module'] != "Home") {
-				$return_action = 'DetailView';
+			    $return_action = 'DetailView';
 			}
 			else {
-	   			// if we "Cancel", we go back to the list view.
-	   		 	$return_action = $_REQUEST['return_action'];
+	   		    // if we "Cancel", we go back to the list view.
+	   		    $return_action = $_REQUEST['return_action'];
 	   		}
 	   	}
 	   	else {
@@ -90,8 +90,8 @@ class multifieldsFormBase {
 		if(isset($_POST['return_id']) && $_POST['return_id'] != "") {
 			$return_id = $_POST['return_id'];
 		}
-		header("Location: index.php?action=$return_action&module=$return_module&record=$return_id");
-	}
+			hocation: index.php?action=$return_action&module=$return_module&record=$return_id");
+		}
 }
 ?>
 
