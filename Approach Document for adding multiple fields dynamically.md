@@ -130,14 +130,14 @@ function cancel(ln){
 // This function will be called on body onload event of edit view page
 function addmulti(vardata){
     	fields=vardata.split(','); // Here we are splitting data seperated with comma as delimeter.
-   		 for(var i=0;i<fields.length;i++) // This will appends text fields 
-   		 {
-   			 var xy=document.getElementById('productLine1').insertRow(-1);
-   			 var inval=xy.insertCell(0);
-   			 inval.innerHTML='<input type=\'text\' id=\'multi[]\' name=\'multi[]\'     value=\''+fields[i] +'\'><input type=\'button\' value=\'-\' onclick=\'cancel(this)\'>';   	 
+   		for(var i=0;i<fields.length;i++) // This will appends text fields 
+   		{
+   			var xy=document.getElementById('productLine1').insertRow(-1);
+   			var inval=xy.insertCell(0);
+   			inval.innerHTML='<input type=\'text\' id=\'multi[]\' name=\'multi[]\'     value=\''+fields[i] +'\'><input type=\'button\' value=\'-\' onclick=\'cancel(this)\'>';   	 
    		 }
 }    
 </script>
 
 ```
-*Note: After completion of these customizations make sure to delete file editview.tpl in catche/modules/<module name>*
+*Note: After completion of these customizations make sure to delete file editview.tpl in catche/modules/module_name*
