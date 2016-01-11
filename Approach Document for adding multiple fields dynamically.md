@@ -5,7 +5,7 @@ This document explains the stepwise approach for creating multiple text fields d
 Create a custom field using studio with the data type text field. In this case i have created a text field named ‘multi’ in custom module multi fields.
 
 ### Step 2
-Create a file Save.php in modules/<module name>/ directory. Place the code in the file.
+Create a file Save.php in modules/module_name/ directory. Place the code in the file.
 
 ```
   <?php 
