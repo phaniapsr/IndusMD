@@ -8,7 +8,8 @@ the programmatic.
  2. Open subpaneldefs.php  file.
  3. Comment the following code.
  ```
-campaigns' => array(
+ 
+ campaigns' => array(
     'order' => 110,
     'module' => 'CampaignLog',
     'sort_order' => 'desc',
@@ -43,6 +44,7 @@ campaigns' => array(
      array('widget_class' => 'SubPanelTopSelectButton',        
     'mode'=>'MultiSelect')
               ),
-                 ), 
+                 ),
+
 ```
   * 4. Save the file.
