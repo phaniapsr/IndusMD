@@ -7,8 +7,8 @@ the programmatic.
  1. Go to the module->contacts(module name)->metadata
  2. Open subpaneldefs.php  file.
  3. Comment the following code.
- 
-``` campaigns' => array(
+ ```
+campaigns' => array(
     'order' => 110,
     'module' => 'CampaignLog',
     'sort_order' => 'desc',
@@ -43,5 +43,6 @@ the programmatic.
      array('widget_class' => 'SubPanelTopSelectButton',        
     'mode'=>'MultiSelect')
               ),
-                 ), ```
+                 ), 
+```
   * 4. Save the file.
