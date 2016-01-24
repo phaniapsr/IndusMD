@@ -47,4 +47,4 @@ the programmatic.
                  ),
 
 ```
-  * 4. Save the file.
+ 4. Save the file.
