@@ -7,6 +7,7 @@ the programmatic.
  1. Go to the module->contacts(module name)->metadata
  2. Open subpaneldefs.php  file.
  3. Comment the following code.
+ 
 ``` campaigns' => array(
     'order' => 110,
     'module' => 'CampaignLog',
@@ -15,9 +16,8 @@ the programmatic.
     'get_subpanel_data'=>'campaigns',
     'subpanel_name' => 'ForTargets',
     'title_key' => 'LBL_CAMPAIGN_LIST_SUBPANEL_TITLE',
-    ), ```
-    
-    ``` 'project' => array(
+    ),
+   'project' => array(
     'order' => 100,
     'module' => 'Project',
     'sort_order' => 'asc',
@@ -28,9 +28,8 @@ the programmatic.
     'top_buttons' => array(
     array('widget_class' => 'SubPanelTopButtonQuickCreate'), 
     ),    
-          ), ```
-
-``` 'bugs' => array(
+          ), 
+   'bugs' => array(
     'order' => 80,
     'module' => 'Bugs',
     'sort_order' => 'desc',
