@@ -28,6 +28,7 @@ file which is located in <root>\include\mvc\controller.
 ``` 
 'PostTo'=>array('file'=>'MangoLib/custom/modules/Meetings/postMeeting.php','auth'=>true), 
 ```
+*Note: Here entry path can be any thing accessable with in sugarcrm structure.*
 #### Step 6
 In the php file (/postMeeting.php) of entrypoint the code to perform action on click of the 
 button should be defined. 
