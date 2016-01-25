@@ -1,7 +1,7 @@
 ### Aim : 
-Hide sub panel the l under the contact module through programmatic.
+Hide sub panel under the contact module through subpaneldefs.php.
 ### Description : 
-Under contact module need to hide the projects,bugs,campaigns  module through the programmatic.
+Under contact module need to hide the projects,bugs,campaigns module through the subpaneldefs.php.
 ### Procedure : 
 1. Go to the module->contacts(module name)->metadata
 2. Open subpaneldefs.php file
