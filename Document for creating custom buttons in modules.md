@@ -1,4 +1,6 @@
-## Below is the Step wise Process Flow of :
+## Aim
+This document explains the process of creating custom buttons in the Meetings module detail view.
+
 #### Step 1 
 ``` Go to <root>\custom\modules\Meetings\metadata\detailviewdefs.php ```
 #### Step 2
