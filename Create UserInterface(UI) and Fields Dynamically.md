@@ -11,7 +11,7 @@ mentioned below:
 ## Approach:
    Web server sends the type of UI and the number of items/pages in UI is send through 
 XML. Need to parse the XML response and display UI interface and its related fields.
-# Sample XML file is shown below:
+### Sample XML file is shown below:
 ```
 <?xml version="1.0" encoding="UTF-8" ?>
  <MangoUserDataFile>
@@ -149,12 +149,13 @@ and the sample looks like
 ```
   In above XML,”id” in property will represents type of filed and the remaining will tells about its 
 functionality.
-# Functionality:
+### Functionality:
   Uisng NSXML parser we will parse teh XML and store it in a mutable array. This array contains 
 dictionary .
-#Note: We need to create all views or fields progmatically. We can't use Interface builder to 
+### Note: 
+We need to create all views or fields progmatically. We can't use Interface builder to 
 create UI or fields.
-## Create Tab view programmatically:
+#### Create Tab view programmatically:
 ```
 tab=[[UITabBarController alloc]init];
 NSMutableArray *tabViewControl = [[NSMutableArray alloc]init];
@@ -165,7 +166,7 @@ NSMutableArray *tabViewControl = [[NSMutableArray alloc]init];
 [tab setViewControllers:tabViewControl];
 [self.view addSubview:tab.view];
 ```
-## Create Text Field programmatically:
+### Create Text Field programmatically:
  ```
  UILabel *lblMyLable = [[[UILabel alloc] initWithFrame:CGRectMake(10 + k, (j* 100) + 100, 150, 40)]autorelease];
  llblMyLable.lineBreakMode = UILineBreakModeWordWrap;
@@ -187,7 +188,7 @@ UITextField * textFieldRounded = [[UITextField alloc] initWithFrame:CGRectMake(8
  textFieldRounded.returnKeyType = UIReturnKeyDone;  // type of the return key
  textFieldRounded.clearButtonMode = UITextFieldViewModeWhileEditing;    // has a clear 'x' button to the right
  ```
-## Create BUTTON programmatically:
+#### Create BUTTON programmatically:
 ```
     UIButton *myButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
      myButton.frame = CGRectMake((j *200) + 50, 750, 150, 40); 
@@ -199,7 +200,7 @@ UITextField * textFieldRounded = [[UITextField alloc] initWithFrame:CGRectMake(8
      llblMyLable2.text = fieldsDict.name;
      [self.view addSubview:lblMyLable2]; 
   ```
-##  Create SWITCH programmatically:
+####  Create SWITCH programmatically:
   ```
   UISwitch *switchBtn;
   switchBtn=[[UISwitch alloc]initWithFrame:CGRectMake(150, 10, 130, 40)];
