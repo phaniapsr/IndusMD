@@ -4,13 +4,13 @@
  2.User hooks(eg: before_login, before_logout, after_login, after_logout etc)
  3.Module hooks(eg: after_save, before_save, after_retrieve, before_retrieve etc )
 #### Adding hooks to sugarcrm:
-_ step 1: _ 
+###### step 1: 
    There is an empty folder named custom in root folder of sugarcrm application.The
 custom hooks are separate from core sugarcrm business logic.
-_ step 2: _ 
+###### step 2: 
    Let's say we need to create a business hooks for Accounts module,create a folder
 called modules in custom folder.create a folder with module name Accounts in module folder
-_ step 3: _
+###### step 3:
    create a php file called logic_hooks.php in Accounts folder.The code in the file looks as shown below
 ```
 <?php
@@ -28,7 +28,7 @@ hook.Here the event is after_save
     3rd parameter is a php file where logic is present
     4th parameter is a class name in the php file
     5th parameter is a method name in the class which has the logic
-_ step 4: _
+###### step 4
   create the file sav.php which has business logic in it as shown below:
 ```
 <?php
@@ -45,6 +45,6 @@ method_name(&$bean,$event,$arguments)
 1st parameter is the reference to the $this bean
 2nd parameter is the string for the current event(eg: before_save etc)
 3rd parameter is the array of arguments for the event.
-_ step 5: _ 
+###### step 5:
   Make sure the permissions are changed for logic_hooks.php and the business logic
 class file so that it is accessed by the web server or else sugarcrm can't read these files.
