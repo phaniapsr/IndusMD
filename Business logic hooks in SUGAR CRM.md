@@ -20,7 +20,7 @@ called modules in custom folder.create a folder with module name Accounts in mod
  if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry   Point');
  $hook_array = array();
  $hook_array['after_save'] = array();
-$hook_array['after_save'][] = array(1, 'sav', 'custom/modules/Accounts/sav.php', 'sav', 'sav');
+ $hook_array['after_save'][] = array(1, 'sav', 'custom/modules/Accounts/sav.php', 'sav', 'sav');
 ?>
 ```
 The $hook_array variable stores the event for which you want to apply a particular hook.Here the event is after_save
@@ -37,9 +37,9 @@ The $hook_array variable stores the event for which you want to apply a particul
 ```
 <?php
  if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
- class sav
+ class SaveHandler
  {
-      function sav(&$bean, $event, $arguments){
+      function saveHandler(&$bean, $event, $arguments){
           //simple alert box pops up for the hook event
           die('<script language="javascript">alert("Account hook by Docfiles")</script>;');
       }
