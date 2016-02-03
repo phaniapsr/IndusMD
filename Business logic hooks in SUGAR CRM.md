@@ -1,4 +1,5 @@
-## Aim: This document explains various types of logichooks available in SugarCRM for altering general logic flow 
+## Aim:
+This document explains various types of logichooks available in SugarCRM for altering general logic flow 
 #### There are basically 3 types of hooks in sugarCRM:
  1. Application hooks(eg: after_ui_frame, after_ui_footer etc)
  2. User hooks(eg: before_login, before_logout, after_login, after_logout etc)
