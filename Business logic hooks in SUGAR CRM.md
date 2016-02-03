@@ -4,12 +4,15 @@
  2. User hooks(eg: before_login, before_logout, after_login, after_logout etc)
  3. Module hooks(eg: after_save, before_save, after_retrieve, before_retrieve etc )
 #### Adding hooks to sugarcrm:
+
 ###### Step 1: 
    There is an empty folder named custom in root folder of sugarcrm application.The
 custom hooks are separate from core sugarcrm business logic.
+
 ###### Step 2: 
    Let's say we need to create a business hooks for Accounts module,create a folder
 called modules in custom folder.create a folder with module name Accounts in module folder
+
 ###### Step 3:
    create a php file called logic_hooks.php in Accounts folder.The code in the file looks as shown below
 ```
