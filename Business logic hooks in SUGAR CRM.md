@@ -48,9 +48,9 @@ The $hook_array variable stores the event for which you want to apply a particul
 The class name is sav which has a method sav
 The method signature for business logic method is
 method_name(&$bean,$event,$arguments)
-1st parameter is the reference to the $this bean
-2nd parameter is the string for the current event(eg: before_save etc)
-3rd parameter is the array of arguments for the event.
+* 1st parameter is the reference to the $this bean
+* 2nd parameter is the string for the current event(eg: before_save etc)
+* 3rd parameter is the array of arguments for the event.
 
 ###### Step 5:
   Make sure the permissions are changed for logic_hooks.php and the business logic class file so that it is accessed by the web server or else sugarcrm can't read these files.
