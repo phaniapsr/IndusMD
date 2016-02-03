@@ -25,7 +25,7 @@ called modules in custom folder.create a folder with module name Accounts in mod
 ```
 The $hook_array variable stores the event for which you want to apply a particular hook.Here the event is after_save
 
-### The array() declaration above has 5 parameters:
+###### The array() declaration above has 5 parameters:
   * First parameter is a processing index
   * Second parameter is string to identify the hook
   * Third parameter is a php file where logic is present
