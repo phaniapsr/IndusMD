@@ -26,11 +26,11 @@ $hook_array['after_save'][] = array(1, 'sav', 'custom/modules/Accounts/sav.php',
 The $hook_array variable stores the event for which you want to apply a particular hook.Here the event is after_save
 
 ### The array() declaration above has 5 parameters:
-  *  1st parameter is a processing index
-  * 2nd parameter is string to identify the hook
-  * 3rd parameter is a php file where logic is present
-  * 4th parameter is a class name in the php file
-  * 5th parameter is a method name in the class which has the logic
+  * First parameter is a processing index
+  * Second parameter is string to identify the hook
+  * Third parameter is a php file where logic is present
+  * Fourth parameter is a class name in the php file
+  * Fifth parameter is a method name in the class which has the logic
 
 ###### Step 4
   create the file sav.php which has business logic in it as shown below:
@@ -45,12 +45,12 @@ The $hook_array variable stores the event for which you want to apply a particul
       }
  }
 ```
-The class name is sav which has a method sav
+The class name is sugar logic save which has a method method save event
 The method signature for business logic method is
 method_name(&$bean,$event,$arguments)
-* 1st parameter is the reference to the $this bean
-* 2nd parameter is the string for the current event(eg: before_save etc)
-* 3rd parameter is the array of arguments for the event.
+* First parameter is the reference to the $this bean
+* Second parameter is the string for the current event(eg: before_save etc)
+* Third parameter is the array of arguments for the event.
 
 ###### Step 5:
   Make sure the permissions are changed for logic_hooks.php and the business logic class file so that it is accessed by the web server or else sugarcrm can't read these files.
