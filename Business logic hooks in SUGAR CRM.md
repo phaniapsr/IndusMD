@@ -26,11 +26,11 @@ $hook_array['after_save'][] = array(1, 'sav', 'custom/modules/Accounts/sav.php',
 The $hook_array variable stores the event for which you want to apply a particular hook.Here the event is after_save
 
 ### The array() declaration above has 5 parameters:
-    1st parameter is a processing index
-    2nd parameter is string to identify the hook
-    3rd parameter is a php file where logic is present
-    4th parameter is a class name in the php file
-    5th parameter is a method name in the class which has the logic
+  *  1st parameter is a processing index
+  * 2nd parameter is string to identify the hook
+  * 3rd parameter is a php file where logic is present
+  * 4th parameter is a class name in the php file
+  * 5th parameter is a method name in the class which has the logic
 
 ###### Step 4
   create the file sav.php which has business logic in it as shown below:
