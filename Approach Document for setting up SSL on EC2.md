@@ -52,6 +52,7 @@ SSLCertificateChainFile /etc/ssl/gd_bundle.crt
 ###### Step 7:
   Make sure Apache2 to listen on port 443, edit the /etc/apache2/ports.conf  and restart Apache
               command : /etc/init.d/apache2 restart
+
 **_Note 3:_**
     
     If all went well you should be able to access https. For EC2 make sure Port 443 is enabled as well on the AWS Console
