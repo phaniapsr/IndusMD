@@ -29,26 +29,26 @@ $subpanel_layout = array(
         'top_buttons' => array( ), 
         'where' => '', 
         'list_fields' => array( 
-        'vname' => 'LBL_NAME', 
-        'width' => '45%', 
-        'vname' => 'LBL_DATE_MODIFIED', 
-        'width' => '45%', 
-        array('widget_class' => 'SubPanelTopCreateButton'), 
-        array('widget_class' => 'SubPanelTopSelectButton', 'popup_module' => $module_name), 
-        'width' => '4%', 
-        'name'=>array('widget_class' => 'SubPanelDetailViewLink',), 
-        'date_modified'=>array( ), 
-        'edit_button'=>array( 
+            'vname' => 'LBL_NAME', 
+            'width' => '45%', 
+            'vname' => 'LBL_DATE_MODIFIED', 
+            'width' => '45%', 
+            array('widget_class' => 'SubPanelTopCreateButton'), 
+            array('widget_class' => 'SubPanelTopSelectButton', 'popup_module' => $module_name), 
+            'width' => '4%', 
+            'name'=>array('widget_class' => 'SubPanelDetailViewLink',), 
+            'date_modified'=>array( ), 
+            'edit_button'=>array( 
                 'widget_class' => 'SubPanelEditButton', 
                 'module' => $module_name, 
-              ), 
-        'remove_button'=>array( 
-              'widget_class' => 'SubPanelRemoveButton', 
-              'module' => $module_name, 
-              'width' => '5%', 
-        ), 
-    ),
-  );
+            ), 
+            'remove_button'=>array( 
+                'widget_class' => 'SubPanelRemoveButton', 
+                'module' => $module_name, 
+                'width' => '5%', 
+            ), 
+        ),
+);
 
 ```
 
