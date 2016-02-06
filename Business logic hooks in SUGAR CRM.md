@@ -4,6 +4,7 @@ This document explains various types of logichooks available in SugarCRM for alt
  1. Application hooks(eg: after_ui_frame, after_ui_footer etc)
  2. User hooks(eg: before_login, before_logout, after_login, after_logout etc)
  3. Module hooks(eg: after_save, before_save, after_retrieve, before_retrieve etc )
+
 #### Adding hooks to sugarcrm:
 
 ###### Step 1: 
