@@ -13,13 +13,15 @@
 **_Note 1:_**
   On Ubuntu this changes you to the root user as you cannot access the directory on the next step.
            
-          command: cd /etc/ssl/private
-          
-          command: openssl genrsa -des3 -out indusmdemr.com.key 2048
-          
+         ```
+         command: cd /etc/ssl/private
+         command: openssl genrsa -des3 -out indusmdemr.com.key 2048
+         
+         ``` 
 **_Note 2:_**
- 
-  Make sure its 2048 and not 1024 bit as this would be required later on GoDaddy.
+  
+   Make sure its 2048 and not 1024 bit as this would be required later on GoDaddy.
+
 Enter keyphrase {in terminal you need to enter a keyphrase, it is a temporary passcode}
 
 ###### Step 3:
