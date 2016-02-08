@@ -10,8 +10,8 @@
 
 4.Add this code to it
        
-  
-       1. function buildPrintLink($totalCount)
+ 1. function buildPrintLink($totalCount)
+      
         ```
         {
             $script = '<input class="button" type="button" value="Print" onclick=
