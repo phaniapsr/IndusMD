@@ -13,16 +13,18 @@
  1. function buildPrintLink($totalCount)
       
         ```
+        
         {
             $script = '<input class="button" type="button" value="Print" onclick=
             "var t = 0; var c=document.MassUpdate[\'mass[]\'];for(var                         
             i=0;i<c.length;i++){c[i].checked?t++:null;};if(t!=1)alert(\'Please select
             one record\');else {for(var i=0;i<c.length;i++){if(c[i].checked) {var
             id=c[i].value;test(id,\''.$_REQUEST['module'].'\');}}}"/>';
-        return $script;
+            return $script;
             } // fn
-        
+            
         ```    
+
 5. Add a javascript function to the end of the document
 ```
     1. <script type="text/javascript">
@@ -31,9 +33,9 @@
            //alert('Reached the test function');
           //alert(id);
          //alert(module);
-string =
-"\index.php?module="+module+"&offset=1&stamp=1265273590019894500&return_module="+module+"&action=DetailView&record="+id+"&print=true\,\'printwin\',\'menubar=1,status=0,resizable=1,scrollbars=1,toolbar=0,location=1\'";
-window.open(string);
+    string =
+      "\index.php?module="+module+"&offset=1&stamp=1265273590019894500&return_module="+module+"&action=DetailView&record="+id+"&print=       true\,\'printwin\',\'menubar=1,status=0,resizable=1,scrollbars=1,toolbar=0,location=1\'";
+      window.open(string);
       }
 </script>
 ```
@@ -47,5 +49,5 @@ appropriate functions in include/ListView/ListViewDisplay.php
 pages to reflect the changes
 
 3. Here we are adding/altering a core document in Sugar. So, not sure if it is upgradesafe.
-4. 
+ 
 4. For now, it only prints one record at a time
