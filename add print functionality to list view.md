@@ -20,7 +20,6 @@
             id=c[i].value;test(id,\''.$_REQUEST['module'].'\');}}}"/>';
         return $script;
             } // fn
-            
         ```    
 5. Add a javascript function to the end of the document
 ```
