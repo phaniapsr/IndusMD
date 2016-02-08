@@ -10,9 +10,10 @@
 
 4.Add this code to it
        
-       ```
+  
        1. function buildPrintLink($totalCount)
-          {
+        ```
+        {
             $script = '<input class="button" type="button" value="Print" onclick=
             "var t = 0; var c=document.MassUpdate[\'mass[]\'];for(var                         
             i=0;i<c.length;i++){c[i].checked?t++:null;};if(t!=1)alert(\'Please select
@@ -20,6 +21,7 @@
             id=c[i].value;test(id,\''.$_REQUEST['module'].'\');}}}"/>';
         return $script;
             } // fn
+        
         ```    
 5. Add a javascript function to the end of the document
 ```
