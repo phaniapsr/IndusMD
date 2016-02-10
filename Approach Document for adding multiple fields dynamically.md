@@ -1,3 +1,5 @@
+###### SugarCRM version : 6.5
+
 ## Purpose
 This document explains the stepwise approach for creating multiple text fields dynamically in the edit view of the page. 
 
