@@ -1,3 +1,7 @@
+###### Prepared By: Jeyanth Somu Kumar G
+###### Date  : 03 Jan 2012
+###### SugarCRM version : 6.5
+
 #### Aim: Adding modules to My Activity Stream.
 
 #### Step 1: 
