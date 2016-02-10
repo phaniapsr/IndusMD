@@ -1,3 +1,9 @@
+###### Author       : Sri Sai Venkatesh.
+###### Date          : 26-February-2013
+###### Description: This document comprise of total flow of Creating custom buttons in the modules.
+###### Team         : EMR Team.
+###### SugarCRM version : 6.5
+
 ## Aim
 This document explains the process of creating custom buttons in the Meetings module detail view.
 
