@@ -1,3 +1,7 @@
+###### Created By       : Jeyanth G
+###### Date             : 18/04/2012.
+###### SugarCRM version : 6.5
+
 #### Aim:  
 
 Removing Create/Select buttons from the Sup Panels.
