@@ -1,3 +1,9 @@
+###### Prepared By	:  Anish Kholay
+###### Date             :  27th March 2013
+###### SugarCRM version : 6.5
+
+
+
 #### Aim: 
       To setup SSL on EC2 environment
 ###### Step 1:
