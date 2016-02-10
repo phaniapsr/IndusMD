@@ -1,3 +1,6 @@
+###### documented by BHARANI PRASAD
+###### SugarCRM version : 6.5
+
 ## Aim:
 This document explains various types of logichooks available in SugarCRM for altering general logic flow 
 #### There are basically 3 types of hooks in sugarCRM:
