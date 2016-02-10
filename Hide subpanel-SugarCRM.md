@@ -1,3 +1,5 @@
+###### SugarCRM version : 6.5
+
 ### Aim : 
 Hide sub panel under the contact module through subpaneldefs.php.
 ### Description : 
