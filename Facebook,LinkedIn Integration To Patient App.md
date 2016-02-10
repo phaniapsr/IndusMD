@@ -1,3 +1,9 @@
+###### Author        : Venu
+###### Date          : 23-July-2012.
+###### Description   : Approach document for facebook,linkedin integration to patient app.
+###### Team          : IPhone Team.
+###### SugarCRM version : 6.5
+
 ## Steps for creating meetings:
 
 #### Step 1:
