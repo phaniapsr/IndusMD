@@ -1,3 +1,7 @@
+###### Prepared By: Jeyanth Somu Kumar G
+###### Date  :            06/12/2011.
+###### SugarCRM version : 6.5
+
 ### Aim: Creating an Editable Detail View
 
 ### Procedure:
@@ -5,13 +9,14 @@
 #### Step 1: 
    Modify the sugarCRM default detail view tpl file, which is located in the includes folder. 
 Replace the DetailView.tpl file code with the below code
+
 Sample - Code
 
 ```
 
 {{if !$colData.field.disable_edit}}    {{if $module != ""}}
 
-    <div class='edit_block' style="display: none;" 
+       <div class='edit_block' style="display: none;" 
 
 id='{{$fields[$colData.field.name].name}}_editblock'>
 
@@ -20,10 +25,10 @@ id='{{$fields[$colData.field.name].name}}_editblock'>
 !isset($colData.field.displayParams.required)) ||  (isset($colData.field.displayParams.required) 
 
 && $colData.field.displayParams.required && $fields[$colData.field.name].required !== false)}}
-
+    
     <input type='hidden' 
-
-id='{{$fields[$colData.field.name].name}}_required' value='true'>
+    
+    id='{{$fields[$colData.field.name].name}}_required' value='true'>
 
     {{else}}
 
