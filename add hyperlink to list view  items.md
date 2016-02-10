@@ -1,3 +1,5 @@
+###### SugarCRM version : 6.5
+
 ### Aim: 
   To add a hyperlink to the fields of the custom built modules.
 
