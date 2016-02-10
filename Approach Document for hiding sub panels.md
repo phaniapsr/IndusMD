@@ -1,3 +1,9 @@
+###### Author       : Sri Sai Venkatesh.
+###### Date          : 18-Feb-2013
+###### Description: This document comprise of total detail of hiding a sub panel.
+###### Team         : EMR Team.
+###### SugarCRM version : 6.5
+
 ## Purpose
 This document comprise of total detail of hiding a sub panel.
 ###Below is the step wise process flow of hiding sub panels:
